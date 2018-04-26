@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import { Link, NavLink, Route } from 'react-router-dom';
 import './Menu.css';
+import Translate from 'react-translate-component';
+import counterpart from 'counterpart' ;
+
 class Menu extends Component {
 
 
 
     render() {
+        const VIZ = <Translate type='text' content='navbar.viz' />//General
+        const ABOUT = <Translate type='text' content='navbar.about' />//Mun Map
+        const CONTACT = <Translate type='text' content='navbar.contact' />//Mun Map
+
         return (
             <div>
                 <div className="menu-icon">
@@ -17,16 +24,14 @@ class Menu extends Component {
                 <div className="nav">
                     <div className="nav__content">
                         <ul className="nav__list">
-                            <li className="nav__list-item"><Link className={this.props.activeViz} to="/viz" >Viz</Link></li>
-                            <li className="nav__list-item"><Link className={this.props.activeAbout} to="/viz" >About</Link></li>
-                            <li className="nav__list-item"><Link className={this.props.activeContact} to="/viz" >Contact</Link></li>
+                            <li className="nav__list-item"><Link className={this.props.activeViz} to="/viz" >{VIZ}</Link></li>
+                            <li className="nav__list-item"><Link className={this.props.activeAbout} to="/about" >{ABOUT}</Link></li>
+                            <li className="nav__list-item"><Link className={this.props.activeContact} to="/contact" >{CONTACT}</Link></li>
                         </ul>
                     </div>
                 </div>
 
-                <div className="site-content">
-                    <h1 className="site-content__headline">Another menu concept</h1>
-                </div>
+                
 
             </div>
         );

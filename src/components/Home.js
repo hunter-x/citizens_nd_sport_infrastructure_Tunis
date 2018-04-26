@@ -7,6 +7,9 @@ export default class Home extends Component {
         <Menu activeViz='activeLink'
               activeAbout=''
               activeContact='' />
+              <div className="site-content">
+                    <h1 className="site-content__headline">Another menu concept</h1>
+                </div>
         React simple starter Home</div>
     );
   }
