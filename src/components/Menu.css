@@ -1,5 +1,5 @@
 body {
-    background-color: #1e2023;
+    background-color: #ffffff;
     font-family: "Fira Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -7,7 +7,7 @@ body {
   
   .site-content {
     max-width: 1100px;
-    height: 100vh;
+    height: 25vh;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -16,7 +16,9 @@ body {
   }
   .site-content__headline {
     font-weight: 200;
-    color: #ffffff;
+    line-height: 1.5;
+    text-align: center;
+    color: #000000;
     font-size: calc(2vw + 10px);
   }
   
@@ -33,7 +35,7 @@ body {
     height: 2px;
     width: 30px;
     display: block;
-    background-color: #ffffff;
+    background-color: #000000;
     margin-bottom: 4px;
     transition: background-color .5s ease, -webkit-transform .2s ease;
     transition: transform .2s ease, background-color .5s ease;
@@ -65,7 +67,7 @@ body {
             transform: translateX(0%) translateY(-100%);
   }
   .nav:after {
-    background: white;
+    background: #000;
     transition-delay: 0s;
   }
   .nav:before {
@@ -97,7 +99,7 @@ body {
   .nav__list-item:before {
     content: "";
     position: absolute;
-    background: #000000;
+    background: #ffffff;
     width: 20px;
     height: 1px;
     top: 100%;
@@ -111,14 +113,14 @@ body {
   }
   .nav__list-item a{
     text-decoration:none;
-    color : #000000;
+    color : #ffffff;
   }
   .activeLink{
     text-decoration:none;
     color : #0275d8!important;
   }
   section.nav-active .menu-icon__line {
-    background-color: #000;
+    background-color: #ffffff;
     -webkit-transform: translateX(0px) rotate(-45deg);
             transform: translateX(0px) rotate(-45deg);
   }
