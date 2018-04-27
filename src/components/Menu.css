@@ -117,33 +117,33 @@ body {
     text-decoration:none;
     color : #0275d8!important;
   }
-  body.nav-active .menu-icon__line {
+  section.nav-active .menu-icon__line {
     background-color: #000;
     -webkit-transform: translateX(0px) rotate(-45deg);
             transform: translateX(0px) rotate(-45deg);
   }
-  body.nav-active .menu-icon__line-left {
+  section.nav-active .menu-icon__line-left {
     -webkit-transform: translateX(1px) rotate(45deg);
             transform: translateX(1px) rotate(45deg);
   }
-  body.nav-active .menu-icon__line-right {
+  section.nav-active .menu-icon__line-right {
     -webkit-transform: translateX(-2px) rotate(45deg);
             transform: translateX(-2px) rotate(45deg);
   }
-  body.nav-active .nav {
+  section.nav-active .nav {
     visibility: visible;
   }
-  body.nav-active .nav:before, body.nav-active .nav:after {
+  section.nav-active .nav:before, section.nav-active .nav:after {
     -webkit-transform: translateX(0%) translateY(0%);
             transform: translateX(0%) translateY(0%);
   }
-  body.nav-active .nav:after {
+  section.nav-active .nav:after {
     transition-delay: .1s;
   }
-  body.nav-active .nav:before {
+  section.nav-active .nav:before {
     transition-delay: 0s;
   }
-  body.nav-active .nav__list-item {
+  section.nav-active .nav__list-item {
     opacity: 1;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -151,19 +151,19 @@ body {
     transition: opacity .3s ease, transform .3s ease, color .3s ease;
     transition: opacity .3s ease, transform .3s ease, color .3s ease, -webkit-transform .3s ease;
   }
-  body.nav-active .nav__list-item:nth-child(0) {
+  section.nav-active .nav__list-item:nth-child(0) {
     transition-delay: 0.5s;
   }
-  body.nav-active .nav__list-item:nth-child(1) {
+  section.nav-active .nav__list-item:nth-child(1) {
     transition-delay: 0.6s;
   }
-  body.nav-active .nav__list-item:nth-child(2) {
+  section.nav-active .nav__list-item:nth-child(2) {
     transition-delay: 0.7s;
   }
-  body.nav-active .nav__list-item:nth-child(3) {
+  section.nav-active .nav__list-item:nth-child(3) {
     transition-delay: 0.8s;
   }
-  body.nav-active .nav__list-item:nth-child(4) {
+  section.nav-active .nav__list-item:nth-child(4) {
     transition-delay: 0.9s;
   }
   

@@ -15,7 +15,7 @@ class Menu extends Component {
 
         return (
             <div>
-                <div className="menu-icon">
+                <div onClick={this.props.openMenu} className="menu-icon">
                     <span className="menu-icon__line menu-icon__line-left"></span>
                     <span className="menu-icon__line"></span>
                     <span className="menu-icon__line menu-icon__line-right"></span>
@@ -24,7 +24,7 @@ class Menu extends Component {
                 <div className="nav">
                     <div className="nav__content">
                         <ul className="nav__list">
-                            <li className="nav__list-item"><Link className={this.props.activeViz} to="/viz" >{VIZ}</Link></li>
+                            <li className="nav__list-item"><Link className={this.props.activeViz} to="/" >{VIZ}</Link></li>
                             <li className="nav__list-item"><Link className={this.props.activeAbout} to="/about" >{ABOUT}</Link></li>
                             <li className="nav__list-item"><Link className={this.props.activeContact} to="/contact" >{CONTACT}</Link></li>
                         </ul>

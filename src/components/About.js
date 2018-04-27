@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Menu from './Menu';
-export default class Home extends Component {
+export default class About extends Component {
   constructor(props) {
     super(props);
     this.state={menuStyle:true}
@@ -14,15 +14,15 @@ export default class Home extends Component {
     let menuStyle='';this.state.menuStyle?menuStyle='':menuStyle='nav-active'
     return (
       <section className={menuStyle} >
-        <Menu activeViz='activeLink'
-              activeAbout=''
+        <Menu activeViz=''
+              activeAbout='activeLink'
               activeContact='' 
               openMenu={this.openMenu.bind(this)}
               />
               <div className="site-content">
                     <h1 className="site-content__headline">Another menu concept</h1>
                 </div>
-        React simple starter Home</section>
+        React simple starter Contact</section>
     );
   }
 }
