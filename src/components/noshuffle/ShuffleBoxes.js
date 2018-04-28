@@ -8,26 +8,31 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
 export default class ShuffleBoxes extends Component {
   constructor(props) {
     super(props);
-    this.state = { filter: 'citizen', checked: [true, false, false, false, false], dataSport: dataSport, transition: 0 }
+    this.state = { filter: 'citizen', checked: [true, false, false, false, false],dataSport:dataSport }
   }
 
   handleRadioFilter(filter, e) {
     let checked = [false, false, false, false, false]
-    let transition = this.state.transition + 1;
     checked[parseInt(e.target.value)] = true
-    dataSport.sort(function (a, b) { return (parseInt(a[filter]) > parseInt(b[filter])) ? 1 : ((parseInt(b[filter]) > parseInt(a[filter])) ? -1 : 0); });
+    
+    dataSport.sort(function(a,b) {return (parseInt(a[filter]) > parseInt(b[filter])) ? 1 : ((parseInt(b[filter]) > parseInt(a[filter])) ? -1 : 0);} ); 
 
-    this.setState({ filter, checked, transition });
+    this.setState({ filter, checked });
 
   }
 
   render() {
-    // console.log(dataSport);
+   // console.log(dataSport);
     const CITIZEN = <Translate type='text' content='box.citizen' />//Citizens
     const COMPLEX = <Translate type='text' content='box.complex' />//Sports complex
     const FIELD = <Translate type='text' content='box.field' />//Sports fields
     const SALLE = <Translate type='text' content='box.salle' />//sports Hall
     const ATHLETISM = <Translate type='text' content='box.athletism' />//Athletics Track
+    let box =dataSport.map((object, i) => {
+             
+      return <Box filter={this.state.filter} citizen={object.citizen} complex={object.complex} field={object.field} hall={object.hall} athletic={object.atheletic} color={i} name={object.nom_arrond_fr} key={i} />
+     
+   })
     return (
       <div className='container'>
         <section>
@@ -53,18 +58,16 @@ export default class ShuffleBoxes extends Component {
           </div>
         </section>
         <div className="container">
-        <ReactCSSTransitionGroup transitionName="example"
-        transitionEnterTimeout={700}
-        transitionLeaveTimeout={700}>
-        <div className="row col-md-12" key={this.state.transition}>
+          <div className="row col-md-12">
+          <ReactCSSTransitionGroup transitionName="example"
+          transitionEnterTimeout={5500}
+          transitionLeaveTimeout={5300}>
 
-              {dataSport.map((object, i) => {
-                return <Box filter={this.state.filter} citizen={object.citizen} complex={object.complex} field={object.field} hall={object.hall} athletic={object.atheletic} color={object.color} name={object.nom_arrond_fr} key={i} />
-              })
-              }
+            {box
+            }
+            </ReactCSSTransitionGroup>
+
           </div>
-          </ReactCSSTransitionGroup>
-
         </div>
 
       </div>

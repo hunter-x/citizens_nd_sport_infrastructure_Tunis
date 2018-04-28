@@ -9,7 +9,7 @@ export default class Box extends Component {
     const FIELD = <Translate type='text' content='box.field' />//Sports fields
     const SALLE = <Translate type='text' content='box.salle' />//sports Hall
     const ATHLETISM = <Translate type='text' content='box.athletism' />//Athletics Track
-    const colors =["#c7c1b6", "#bebaaf", "#b5b3a8", "#acaca1", "#a4a59b", "#9b9f95", "#93988e", "#8b9188", "#838a82", "#7b837c", "#737d77", "#6c7671", "#656f6b", "#5e6966", "#576260"]
+    //const colors =["#c7c1b6", "#bebaaf", "#b5b3a8", "#acaca1", "#a4a59b", "#9b9f95", "#93988e", "#8b9188", "#838a82", "#7b837c", "#737d77", "#6c7671", "#656f6b", "#5e6966", "#576260"]
 
     let info;
     switch (this.props.filter) {
@@ -82,8 +82,8 @@ export default class Box extends Component {
         break;
     }
     return (
-      <div className="col-md-4 col-xl-3">
-        <div className="card order-card" style={{background:colors[this.props.color]}}>
+      <div className="col-md-4 col-xl-3" >
+        <div className="card order-card" style={{background:this.props.color}}>
           {info}
         </div>
       </div>

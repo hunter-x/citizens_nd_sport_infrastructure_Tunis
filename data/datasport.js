@@ -4,7 +4,7 @@ var data = [
         "Code arrondissement": "111111",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "المدينة",
-        "atheletic": "2",
+        "athletic": "2",
         "hall": "1",
         "field": "5",
         "complex": "2",
@@ -14,13 +14,14 @@ var data = [
         "Population féminine": "10307",
         "citizen": "21467",
         "nom_arrond_fr": "Medina"
+        ,"color":'#f05474'
     },
     {
         "nom_comm_fr": "Tunis ville",
         "Code arrondissement": "111116",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "التحرير",
-        "atheletic": "2",
+        "athletic": "2",
         "hall": "0",
         "field": "4",
         "complex": "0",
@@ -30,13 +31,14 @@ var data = [
         "Population féminine": "10850",
         "citizen": "21601",
         "nom_arrond_fr": "Ettahrir"
+        ,"color":'#f85b6c'
     },
     {
         "nom_comm_fr": "Tunis ville",
         "Code arrondissement": "111126",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "جبل الجلود",
-        "atheletic": "0",
+        "athletic": "0",
         "hall": "0",
         "field": "6",
         "complex": "0",
@@ -46,13 +48,14 @@ var data = [
         "Population féminine": "12013",
         "citizen": "23638",
         "nom_arrond_fr": "Djebel Djelloud"
+        ,"color":'#ff6364'
     },
     {
         "nom_comm_fr": "Tunis ville",
         "Code arrondissement": "111125",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "سيدي البشير",
-        "atheletic": "3",
+        "athletic": "3",
         "hall": "7",
         "field": "9",
         "complex": "2",
@@ -62,13 +65,14 @@ var data = [
         "Population féminine": "14060",
         "citizen": "27749",
         "nom_arrond_fr": "Sidi El Béchir"
+        ,"color":'#ff6d5b'
     },
     {
         "nom_comm_fr": "Tunis ville",
         "Code arrondissement": "111113",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "باب السويقة",
-        "atheletic": "2",
+        "athletic": "2",
         "hall": "2",
         "field": "5",
         "complex": "1",
@@ -78,13 +82,14 @@ var data = [
         "Population féminine": "14722",
         "citizen": "29185",
         "nom_arrond_fr": "Bab Souika"
+        ,"color":'#ff7852'
     },
     {
         "nom_comm_fr": "Tunis ville",
         "Code arrondissement": "111123",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "الوردية",
-        "atheletic": "0",
+        "athletic": "0",
         "hall": "2",
         "field": "2",
         "complex": "0",
@@ -94,13 +99,14 @@ var data = [
         "Population féminine": "16419",
         "citizen": "32147",
         "nom_arrond_fr": "El Ouardia"
+        ,"color":'#ff8349'
     },
     {
         "nom_comm_fr": "Tunis ville",
         "Code arrondissement": "111119",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "السيجومي",
-        "atheletic": "0",
+        "athletic": "0",
         "hall": "0",
         "field": "4",
         "complex": "0",
@@ -110,13 +116,14 @@ var data = [
         "Population féminine": "16892",
         "citizen": "33852",
         "nom_arrond_fr": "Sijoumi"
+        ,"color":'#ff8e40'
     },
     {
         "nom_comm_fr": "Tunis ville",
         "Code arrondissement": "111118",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "حي الخضراء",
-        "atheletic": "0",
+        "athletic": "0",
         "hall": "1",
         "field": "5",
         "complex": "0",
@@ -126,13 +133,14 @@ var data = [
         "Population féminine": "17606",
         "citizen": "35134",
         "nom_arrond_fr": "Cite El Khadhra"
+        ,"color":'#ff9b36'
     },
     {
         "nom_comm_fr": "Tunis ville",
         "Code arrondissement": "111112",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "باب البحر",
-        "atheletic": "7",
+        "athletic": "7",
         "hall": "5",
         "field": "31",
         "complex": "2",
@@ -142,13 +150,14 @@ var data = [
         "Population féminine": "16982",
         "citizen": "36210",
         "nom_arrond_fr": "Bab El Bhar"
+        ,"color":'#ffa72d'
     },
     {
         "nom_comm_fr": "Tunis ville",
         "Code arrondissement": "111120",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "الزهور",
-        "atheletic": "5",
+        "athletic": "5",
         "hall": "2",
         "field": "16",
         "complex": "3",
@@ -158,13 +167,14 @@ var data = [
         "Population féminine": "20693",
         "citizen": "40728",
         "nom_arrond_fr": "Ezzouhour"
+        ,"color":'#ffb324'
     },
     {
         "nom_comm_fr": "Tunis ville",
         "Code arrondissement": "111117",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "المنزه",
-        "atheletic": "5",
+        "athletic": "5",
         "hall": "2",
         "field": "10",
         "complex": "0",
@@ -174,13 +184,14 @@ var data = [
         "Population féminine": "21613",
         "citizen": "41910",
         "nom_arrond_fr": "El Menzah"
+        ,"color":'#fdc01c'
     },
     {
         "nom_comm_fr": "Tunis ville",
         "Code arrondissement": "111114",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "العمران",
-        "atheletic": "5",
+        "athletic": "5",
         "hall": "1",
         "field": "19",
         "complex": "2",
@@ -190,13 +201,14 @@ var data = [
         "Population féminine": "21432",
         "citizen": "42208",
         "nom_arrond_fr": "El Omrane"
+        ,"color":'#f5cc18'
     },
     {
         "nom_comm_fr": "Tunis ville",
         "Code arrondissement": "111115",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "العمران الاعلى",
-        "atheletic": "0",
+        "athletic": "0",
         "hall": "0",
         "field": "5",
         "complex": "0",
@@ -206,13 +218,14 @@ var data = [
         "Population féminine": "27746",
         "citizen": "55513",
         "nom_arrond_fr": "El Omrane Sup"
+        ,"color":'#ecd81a'
     },
     {
         "nom_comm_fr": "Tunis ville",
         "Code arrondissement": "111124",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "الكبارية",
-        "atheletic": "1",
+        "athletic": "1",
         "hall": "0",
         "field": "8",
         "complex": "0",
@@ -222,13 +235,14 @@ var data = [
         "Population féminine": "43760",
         "citizen": "87319",
         "nom_arrond_fr": "El Kabaria"
+        ,"color":'#e2e423'
     },
     {
         "nom_comm_fr": "Tunis ville",
         "Code arrondissement": "111121",
         "Nom Commune": "بلدية تونس",
         "nom_arrondissement": "الحرايرية",
-        "atheletic": "1",
+        "athletic": "1",
         "hall": "0",
         "field": "9",
         "complex": "1",
@@ -237,7 +251,8 @@ var data = [
         "Population masculine": "55329",
         "Population féminine": "54855",
         "citizen": "110184",
-        "nom_arrond_fr": "Hraïria"
+        "nom_arrond_fr": "Hraïria",
+        "color":'#d5f031'
     }
 ]
 export default data
