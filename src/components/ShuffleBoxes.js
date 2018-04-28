@@ -3,21 +3,26 @@ import './ShuffleBoxes.css'
 import Box from './Box';
 import dataSport from '../../data/datasport';
 import Translate from 'react-translate-component';
-
+import _ from 'lodash/core' ;
 export default class ShuffleBoxes extends Component {
   constructor(props) {
     super(props);
-    this.state = { filter: 'citizen', checked: [true, false, false, false, false] }
+    this.state = { filter: 'citizen', checked: [true, false, false, false, false],dataSport:dataSport }
   }
+
 
   handleRadioFilter(filter, e) {
     let checked = [false, false, false, false, false]
     checked[parseInt(e.target.value)] = true
+    
+    dataSport.sort(function(a,b) {return (parseInt(a[filter]) > parseInt(b[filter])) ? 1 : ((parseInt(b[filter]) > parseInt(a[filter])) ? -1 : 0);} ); 
+
     this.setState({ filter, checked });
+
   }
 
   render() {
-    console.log(dataSport);
+   // console.log(dataSport);
     const CITIZEN = <Translate type='text' content='box.citizen' />//Citizens
     const COMPLEX = <Translate type='text' content='box.complex' />//Sports complex
     const FIELD = <Translate type='text' content='box.field' />//Sports fields
@@ -52,7 +57,7 @@ export default class ShuffleBoxes extends Component {
           <div className="row col-md-12">
             {dataSport.map((object, i) => {
              
-               return <Box filter={this.state.filter} citizen={object.population_number} complex={object.complex} field={object.field} hall={object.salle} athletic={object.atheletic} color={i} name={object.nom_arrond_fr} key={i} />
+               return <Box filter={this.state.filter} citizen={object.citizen} complex={object.complex} field={object.field} hall={object.hall} athletic={object.atheletic} color={i} name={object.nom_arrond_fr} key={i} />
               
             })
             }

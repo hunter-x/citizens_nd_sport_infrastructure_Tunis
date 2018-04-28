@@ -18,7 +18,7 @@ export default class Box extends Component {
           <div className='card-block'>
             <h4 className=" textCenter text-right"><i className="fa fa-cart-plus f-left"></i><span>{this.props.name}</span></h4>
             <div>
-              <h5 className="m-b-.1 textColorRed">{CITIZEN}<span className="f-right">{this.props.citizen}</span></h5>
+              <b><h5 className="m-b-.1 textColorRed">{CITIZEN}<span className="f-right">{this.props.citizen}</span></h5></b>
               <h6 className="m-b-.1">{COMPLEX}<span className="f-right">{this.props.complex}</span></h6>
               <h6 className="m-b-.1">{FIELD}<span className="f-right">{this.props.field}</span></h6>
               <h6 className="m-b-.1">{SALLE}<span className="f-right">{this.props.hall}</span></h6>
