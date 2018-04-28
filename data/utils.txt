@@ -3,3 +3,7 @@ http://polygons.openstreetmap.fr
 https://vestride.github.io/Shuffle/compound-filters 
 
 http://news.barralaman.tn/tunmun-sport/
+
+http://gka.github.io/chroma.js/  -> get the colors tool
+
+https://codepen.io/catalinred/pen/kbscx -> zigzag menu

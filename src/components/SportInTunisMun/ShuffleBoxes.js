@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ShuffleBoxes.css'
 import Box from './Box';
-import dataSport from '../../data/datasport';
+import dataSport from '../../../data/datasport';
 import Translate from 'react-translate-component';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
 
@@ -30,25 +30,25 @@ export default class ShuffleBoxes extends Component {
     const ATHLETISM = <Translate type='text' content='box.athletism' />//Athletics Track
     return (
       <div className='container'>
-        <section>
+        <section className='row col-md-12' >
           <div className="md-radio md-radio-inline">
-            <input id="3" type="radio" name="g2" value={0} onChange={this.handleRadioFilter.bind(this, 'citizen')} checked={this.state.checked[0]} />
+            <input id="3" type="radio" name="g2" value={0} onClick={this.handleRadioFilter.bind(this, 'citizen')} checked={this.state.checked[0]} />
             <label htmlFor="3">{CITIZEN}</label>
           </div>
           <div className="md-radio md-radio-inline">
-            <input id="4" type="radio" name="g2" value={1} onChange={this.handleRadioFilter.bind(this, 'complex')} checked={this.state.checked[1]} />
+            <input id="4" type="radio" name="g2" value={1} onClick={this.handleRadioFilter.bind(this, 'complex')} checked={this.state.checked[1]} />
             <label htmlFor="4">{COMPLEX}</label>
           </div>
           <div className="md-radio md-radio-inline">
-            <input id="5" type="radio" name="g2" value={2} onChange={this.handleRadioFilter.bind(this, 'field')} checked={this.state.checked[2]} />
+            <input id="5" type="radio" name="g2" value={2} onClick={this.handleRadioFilter.bind(this, 'field')} checked={this.state.checked[2]} />
             <label htmlFor="5">{FIELD}</label>
           </div>
           <div className="md-radio md-radio-inline">
-            <input id="6" type="radio" value={3} onChange={this.handleRadioFilter.bind(this, 'hall')} name="g2" checked={this.state.checked[3]} />
+            <input id="6" type="radio" value={3} onClick={this.handleRadioFilter.bind(this, 'hall')} name="g2" checked={this.state.checked[3]} />
             <label htmlFor="6">{SALLE}</label>
           </div>
           <div className="md-radio md-radio-inline">
-            <input id="7" type="radio" value={4} onChange={this.handleRadioFilter.bind(this, 'athletic')} name="g2" checked={this.state.checked[4]} />
+            <input id="7" type="radio" value={4} onClick={this.handleRadioFilter.bind(this, 'athletic')} name="g2" checked={this.state.checked[4]} />
             <label htmlFor="7">{ATHLETISM}</label>
           </div>
         </section>
@@ -59,7 +59,7 @@ export default class ShuffleBoxes extends Component {
         <div className="row col-md-12" key={this.state.transition}>
 
               {dataSport.map((object, i) => {
-                return <Box filter={this.state.filter} citizen={object.citizen} complex={object.complex} field={object.field} hall={object.hall} athletic={object.atheletic} color={object.color} name={object.nom_arrond_fr} key={i} />
+                return <Box filter={this.state.filter} citizen={object.citizen} complex={object.complex} field={object.field} hall={object.hall} athletic={object.athletic} color={object.color} name={object.nom_arrond_fr} key={i} />
               })
               }
           </div>

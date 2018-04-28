@@ -4,6 +4,12 @@ module.exports = {
         about:'About',
         contact:'Contact'
     },
+    zigzagMenu: {
+        boxes:'Boxes',
+        map:'Map',
+        article:'Article'
+    },
+
     box: {
         citizen:'Citizens',
         complex:'Sports complex',

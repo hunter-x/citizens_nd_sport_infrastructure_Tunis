@@ -14,7 +14,7 @@ var data = [
         "Population féminine": "10307",
         "citizen": "21467",
         "nom_arrond_fr": "Medina"
-        ,"color":'#f05474'
+        ,"color":'#d5f031'
     },
     {
         "nom_comm_fr": "Tunis ville",
@@ -31,7 +31,7 @@ var data = [
         "Population féminine": "10850",
         "citizen": "21601",
         "nom_arrond_fr": "Ettahrir"
-        ,"color":'#f85b6c'
+        ,"color":'#e2e423'
     },
     {
         "nom_comm_fr": "Tunis ville",
@@ -48,7 +48,7 @@ var data = [
         "Population féminine": "12013",
         "citizen": "23638",
         "nom_arrond_fr": "Djebel Djelloud"
-        ,"color":'#ff6364'
+        ,"color":'#ecd81a'
     },
     {
         "nom_comm_fr": "Tunis ville",
@@ -65,7 +65,7 @@ var data = [
         "Population féminine": "14060",
         "citizen": "27749",
         "nom_arrond_fr": "Sidi El Béchir"
-        ,"color":'#ff6d5b'
+        ,"color":'#f5cc18'
     },
     {
         "nom_comm_fr": "Tunis ville",
@@ -82,7 +82,7 @@ var data = [
         "Population féminine": "14722",
         "citizen": "29185",
         "nom_arrond_fr": "Bab Souika"
-        ,"color":'#ff7852'
+        ,"color":'#fdc01c'
     },
     {
         "nom_comm_fr": "Tunis ville",
@@ -99,7 +99,7 @@ var data = [
         "Population féminine": "16419",
         "citizen": "32147",
         "nom_arrond_fr": "El Ouardia"
-        ,"color":'#ff8349'
+        ,"color":'#ffb324'
     },
     {
         "nom_comm_fr": "Tunis ville",
@@ -116,7 +116,7 @@ var data = [
         "Population féminine": "16892",
         "citizen": "33852",
         "nom_arrond_fr": "Sijoumi"
-        ,"color":'#ff8e40'
+        ,"color":'#ffa72d'
     },
     {
         "nom_comm_fr": "Tunis ville",
@@ -150,7 +150,7 @@ var data = [
         "Population féminine": "16982",
         "citizen": "36210",
         "nom_arrond_fr": "Bab El Bhar"
-        ,"color":'#ffa72d'
+        ,"color":'#ff8e40'
     },
     {
         "nom_comm_fr": "Tunis ville",
@@ -167,7 +167,7 @@ var data = [
         "Population féminine": "20693",
         "citizen": "40728",
         "nom_arrond_fr": "Ezzouhour"
-        ,"color":'#ffb324'
+        ,"color":'#ff8349'
     },
     {
         "nom_comm_fr": "Tunis ville",
@@ -184,7 +184,7 @@ var data = [
         "Population féminine": "21613",
         "citizen": "41910",
         "nom_arrond_fr": "El Menzah"
-        ,"color":'#fdc01c'
+        ,"color":'#ff7852'
     },
     {
         "nom_comm_fr": "Tunis ville",
@@ -201,7 +201,7 @@ var data = [
         "Population féminine": "21432",
         "citizen": "42208",
         "nom_arrond_fr": "El Omrane"
-        ,"color":'#f5cc18'
+        ,"color":'#ff6d5b'
     },
     {
         "nom_comm_fr": "Tunis ville",
@@ -218,7 +218,7 @@ var data = [
         "Population féminine": "27746",
         "citizen": "55513",
         "nom_arrond_fr": "El Omrane Sup"
-        ,"color":'#ecd81a'
+        ,"color":'#ff6364'
     },
     {
         "nom_comm_fr": "Tunis ville",
@@ -235,7 +235,7 @@ var data = [
         "Population féminine": "43760",
         "citizen": "87319",
         "nom_arrond_fr": "El Kabaria"
-        ,"color":'#e2e423'
+        ,"color":'#f85b6c'
     },
     {
         "nom_comm_fr": "Tunis ville",
@@ -252,7 +252,7 @@ var data = [
         "Population féminine": "54855",
         "citizen": "110184",
         "nom_arrond_fr": "Hraïria",
-        "color":'#d5f031'
+        "color":'#f05474'
     }
 ]
 export default data
