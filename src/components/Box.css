@@ -44,4 +44,11 @@
 .f-right {
     float: right;
 }
+.textCenter{
+    text-align: center;
+    text-decoration: underline;
+}
+.textColorRed{
+    color:#FF5370;
+}
              
