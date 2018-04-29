@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Menu from './Menu';
 import ShuffleBoxes from './SportInTunisMun/ShuffleBoxes' ;
-import Map from './SportInTunisMun/Map' ;
+import MapTunisArrond from './SportInTunisMun/MapTunisArrond' ;
 import Article from './SportInTunisMun/Article' ;
 import ZigzagMenu from './ZigzagMenu' ;
 export default class Home extends Component {
@@ -33,7 +33,7 @@ export default class Home extends Component {
           <h1 className="site-content__headline">Distribution of citizens & Sport infrastructure<br/> in Tunis Municipality</h1>
         </div>
         <ZigzagMenu getVizType={this.getVizType.bind(this)}/>
-        {this.state.chosenViz=='boxes'?<ShuffleBoxes/>:(this.state.chosenViz=='map'?<Map/>:<Article/>)}
+        {this.state.chosenViz=='boxes'?<ShuffleBoxes/>:(this.state.chosenViz=='map'?<MapTunisArrond/>:<Article/>)}
       </section>
     );
   }

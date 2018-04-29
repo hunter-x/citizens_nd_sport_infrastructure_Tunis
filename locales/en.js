@@ -16,6 +16,16 @@ module.exports = {
         field:'Sports fields',
         salle:'sports Hall',
         athletism:'Athletics Track'
+    },
+    mapKey:{
+        citizen:'Number of citizens',
+        complex:'Number sports complex',
+        field:'Number of Sports field',
+        hall:'Number of sports hall',
+        athletic:'Number of athletics track',
+       
+
     }
+
   
 }
