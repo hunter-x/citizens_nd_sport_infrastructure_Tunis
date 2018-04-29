@@ -199,7 +199,7 @@ export default class MapTunisArrond extends Component {
         </Map> :
           <div>
             <div className="col-md-5"></div>
-            <div className="col-md-5" style={{ marginTop: "43vh" }}>
+            <div className="col-md-5" style={{ marginTop: "20vh" }}>
               <h2>"Loading Map"</h2>
               <div style={{ marginLeft: "70px" }}>
                 <ReactLoading type="bars" color="#444" className="react-Loader" delay={0} />

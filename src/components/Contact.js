@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Menu from './Menu';
+import UnderConstruction from './UnderConstruction' ;
 export default class Contact extends Component {
   constructor(props) {
     super(props);
@@ -19,10 +20,10 @@ export default class Contact extends Component {
               activeContact='activeLink' 
               openMenu={this.openMenu.bind(this)}
               />
-              <div className="site-content">
-                    <h1 className="site-content__headline">Another menu concept</h1>
-                </div>
-        React simple starter Contact</section>
+              <UnderConstruction/>
+              <h4 className='col-md-offset-5 '>Under Construction</h4><br/><h4 style={{textAlign:'center'}}>email: agharsallah@democracyinternational.com </h4>
+
+              </section>
     );
   }
 }
