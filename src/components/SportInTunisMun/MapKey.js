@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 
 class MapKey extends Component {
     
-    componentWillMount() {
-        console.log('mountes');
-    }
+
     
     getColor(d, c1, grades) {
         //console.log(d, c1, grades);
@@ -13,9 +11,7 @@ class MapKey extends Component {
         /* else if (d > grades[0]) { return (c1[1]); } */
         else { return (c1[0]); }
       }
-      componentWillReceiveProps(nextProps) {
-          console.log(nextProps);
-      }
+
       
     render() {
          var grades = this.props.grades;

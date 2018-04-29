@@ -15,7 +15,8 @@ export default class MapTunisArrond extends Component {
     this.state = {
       shapeIsLoaded: false, shape: config.initShape, key: 1,
       filter: 'citizen', checked: [true, false, false, false, false],
-      grades: [30000, 40000, 50000], keyTitle: 'Number of citizens'
+      grades: [30000, 40000, 50000], keyTitle: 'Number of citizens',
+      nom:'',population_number:'',field:'',salle:'',atheletic:'',complex:''
     }
   }
 
@@ -92,22 +93,20 @@ export default class MapTunisArrond extends Component {
     }
 
     return {
-      fillColor: this.getColorRegElg(PROPERTY, ["#ffffcc", "#c2e699", "#78c679", "#238443"], this.state.grades),
+      fillColor: this.getColorRegElg(PROPERTY, ["#ffffcc", "#c2e699", "#78c679", "#238443"], GRADES),
       weight: 2.5,
       opacity: 2,
       color: 'black',
       dashArray: '3',
-      fillOpacity: 0.6
+      fillOpacity: 0.7
     };
   }
   highlightFeature(e) {
     const layer = e.target;
-    const property = layer.feature.properties;
-    console.log('eeeeeeeeeeeeeeeeeee', property.inscription_09_08);
-    const activeVoterPer = ((property.inscription_09_08 * 100) / property.allreg_sum).toFixed(2)
+    const property = e.target.feature.properties;
+    console.log(property);
     this.setState({
-      destroy: false, gouv_name: property.NAME_EN, munNumber: property.munnumber,
-      activeVoterPer: activeVoterPer, registered2017: property.inscription_09_08, allRegistered: property.allreg_sum
+      destroy: false, nom: property.nom,population_number:property.population_number, field: property.field,salle: property.salle, atheletic: property.atheletic, complex: property.complex
     });
     return layer.setStyle({
       weight: 5,
@@ -155,7 +154,7 @@ export default class MapTunisArrond extends Component {
             <label htmlFor="7">{ATHLETISM}</label>
           </div>
         </section>
-        {this.state.shapeIsLoaded ? <Map maxZoom={14} center={[36.79, 10.18]} zoom={12} minZoom={10} style={{ height: "90vh", width: "81vw", position: "relative", zIndex: 0, backgroundColor: "white" }}>
+        {this.state.shapeIsLoaded ? <Map maxZoom={14} center={[36.79, 10.18]} zoom={12} minZoom={10} style={{ height: "90vh", width: "81vw", position: "relative", zIndex: 100, backgroundColor: "white" }}>
           <TileLayer
             url='https://api.mapbox.com/styles/v1/hunter-x/cixhpey8700q12pnwg584603g/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaHVudGVyLXgiLCJhIjoiY2l2OXhqMHJrMDAxcDJ1cGd5YzM2bHlydSJ9.jJxP2PKCIUrgdIXjf-RzlA'
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> '
@@ -165,21 +164,26 @@ export default class MapTunisArrond extends Component {
             key={"a" + this.state.filter}
             data={this.state.shape}
             style={this.style.bind(this)}
-          /*onEachFeature={
+          onEachFeature={
             (feature, layer) => {
               //sending shapes center to marker component
               //layer.bindTooltip(feature.properties.NAME_EN,{ permanent: false,className:"tooltipnamear",direction:"right" })
               layer.on({ mouseover: this.highlightFeature.bind(this) });
               layer.on({ mouseout: this.resetFeature.bind(this) });
             }
-          } */
+          }
           >
             <Tooltip direction="bottom" className="leafletTooltip" sticky={true} >
               <div>
-                <h3>{this.state.gouv_name}</h3>
-                <div>
-                  <h4>{this.state.gouv_name}</h4>
-                </div>
+                <h3>{this.state.nom}</h3>
+                {this.state.filter=='citizen'?
+                  <h4>{this.state.population_number} citizen</h4>
+                  :(this.state.filter=='field'?<h4>{this.state.field} sports fields</h4>:
+                  (this.state.filter=='hall'?<h4>{this.state.salle} sports hall</h4>:
+                  (this.state.filter=='athletic'?<h4>{this.state.atheletic} athletics track</h4>:
+                  (this.state.filter=='complex'?<h4>{this.state.complex} sports complex</h4>:null)
+                )))
+                }
               </div>
             </Tooltip>
 

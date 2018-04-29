@@ -61,7 +61,7 @@
   box-sizing: border-box;
 }
 .example-enter {
-  opacity: 0.3;
+  opacity: 0.9;
 }
 
 .example-enter.example-enter-active {
@@ -75,7 +75,7 @@
 }
 
 .example-leave.example-leave-active {
-  opacity: 0.3;
+  opacity: 0.9;
   transition: opacity 700ms ease-in;
 }
 /* .example-appear {
