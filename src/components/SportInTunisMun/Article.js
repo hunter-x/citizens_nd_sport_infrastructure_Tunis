@@ -11,15 +11,18 @@ export default class Article extends Component {
 
   render() {
     // console.log(dataSport);
-    const CITIZEN = <Translate type='text' content='box.citizen' />//Citizens
+    const DESCRIPTION = <Translate type='text' content='articleText.desc' />//Article and data collected by Barr al amen
+    const LINK = <Translate type='text' content='articleText.link' />//Article Link
 
     return (
-      <div className='container col-md-offset-2'>
-        <h4>Article and data collected by Barlamen <a href='http://news.barralaman.tn/tunmun-sport/' target="_blank">Article Link</a></h4>
+      <div className='container row'>
+      <div className='col-md-offset-2'>
+        <h4>{DESCRIPTION} <a href='http://news.barralaman.tn/tunmun-sport/' target="_blank">{LINK}</a></h4>
 
         <a href="http://news.barralaman.tn/tunmun-sport/">
           <img src="https://i2.wp.com/news.barralaman.tn/wp-content/uploads/2018/04/tunmun_inf.jpg?resize=930%2C450 " alt="Article barlamen" style={{marginTop:'20px'}} />
         </a>
+        </div>
       </div>
     );
   }

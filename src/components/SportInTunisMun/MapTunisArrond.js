@@ -48,16 +48,16 @@ export default class MapTunisArrond extends Component {
     let GRADES, keyTitle;
     if (filter == 'citizen') {
       GRADES = [0,30000, 45000];
-      keyTitle = 'Number of citizens'
+      keyTitle = <Translate type='text' content='mapKey.citizen' />
     } else if (filter == 'complex') {
       GRADES = [0, 1, 2];
-      keyTitle = 'Number sports complex'
+      keyTitle =<Translate type='text' content='mapKey.complex' />
     } else if (filter == 'field') {
       GRADES = [0, 5, 9];
-      keyTitle = 'Number of Sports field'
+      keyTitle = <Translate type='text' content='mapKey.field' />
     } else if (filter == 'hall') {
       GRADES = [0, 1, 2];
-      keyTitle = 'Number of sports hall'
+      keyTitle = <Translate type='text' content='mapKey.hall' />
     } else if (filter == 'athletic') {
       GRADES = [0, 2, 4];
       keyTitle = <Translate type='text' content='mapKey.athletic' />
@@ -130,6 +130,9 @@ export default class MapTunisArrond extends Component {
     const FIELD = <Translate type='text' content='box.field' />//Sports fields
     const SALLE = <Translate type='text' content='box.salle' />//sports Hall
     const ATHLETISM = <Translate type='text' content='box.athletism' />//Athletics Track
+
+    const HOVER = <Translate type='text' content='map.hover' />//Hover Over the map for more info
+    const LOADING = <Translate type='text' content='map.loading' />//Loading Map
     return (
       <div className='container'>
         <section className='row col-md-12' >
@@ -177,11 +180,11 @@ export default class MapTunisArrond extends Component {
               <div>
                 <h3>{this.state.nom}</h3>
                 {this.state.filter=='citizen'?
-                  <h4>{this.state.population_number} citizen</h4>
-                  :(this.state.filter=='field'?<h4>{this.state.field} sports fields</h4>:
-                  (this.state.filter=='hall'?<h4>{this.state.salle} sports hall</h4>:
-                  (this.state.filter=='athletic'?<h4>{this.state.atheletic} athletics track</h4>:
-                  (this.state.filter=='complex'?<h4>{this.state.complex} sports complex</h4>:null)
+                  <h4>{this.state.population_number} {CITIZEN}</h4>
+                  :(this.state.filter=='field'?<h4>{this.state.field} {FIELD}</h4>:
+                  (this.state.filter=='hall'?<h4>{this.state.salle} {SALLE}</h4>:
+                  (this.state.filter=='athletic'?<h4>{this.state.atheletic} {ATHLETISM}</h4>:
+                  (this.state.filter=='complex'?<h4>{this.state.complex} {COMPLEX}</h4>:null)
                 )))
                 }
               </div>
@@ -190,7 +193,7 @@ export default class MapTunisArrond extends Component {
           </GeoJSON>
 
           <Control position="topright" >
-            <p>Hover Over the map for more info</p>
+            <p>{HOVER}</p>
           </Control>
           <Control position="bottomright" >
             <MapKey grades={this.state.grades} colorSet={["#ffffcc", "#c2e699", "#78c679", "#238443"]} keyTitle={this.state.keyTitle} key={this.state.filter} />
@@ -200,7 +203,7 @@ export default class MapTunisArrond extends Component {
           <div>
             <div className="col-md-5"></div>
             <div className="col-md-5" style={{ marginTop: "20vh" }}>
-              <h2>"Loading Map"</h2>
+              <h2>{LOADING}</h2>
               <div style={{ marginLeft: "70px" }}>
                 <ReactLoading type="bars" color="#444" className="react-Loader" delay={0} />
               </div>
