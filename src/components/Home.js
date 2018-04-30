@@ -8,11 +8,15 @@ import ZigzagMenu from './ZigzagMenu' ;
 export default class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = { menuStyle: true,chosenViz:'boxes' }
+    this.state = { menuStyle: true,chosenViz:'boxes',mapZIndex:150 }
   }
   openMenu() {
+    //this is trigered wheen the user clicks the menu icon
     let menuStyle = !this.state.menuStyle
-    this.setState({ menuStyle });
+
+    let mapZIndex;
+    menuStyle==true?mapZIndex=150:mapZIndex=100;
+    this.setState({ menuStyle,mapZIndex });
   }
   getVizType(e){
     console.log('dddd',e);
@@ -36,7 +40,7 @@ export default class Home extends Component {
           <h1 className="site-content__headline">{TITLE}<br/> {TITLE2}</h1>
         </div>
         <ZigzagMenu getVizType={this.getVizType.bind(this)}/>
-        {this.state.chosenViz=='boxes'?<ShuffleBoxes/>:(this.state.chosenViz=='map'?<MapTunisArrond/>:<Article/>)}
+        {this.state.chosenViz=='boxes'?<ShuffleBoxes/>:(this.state.chosenViz=='map'?<MapTunisArrond mapZIndex={this.state.mapZIndex}/>:<Article/>)}
       </section>
     );
   }

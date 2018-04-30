@@ -157,7 +157,7 @@ export default class MapTunisArrond extends Component {
             <label htmlFor="7">{ATHLETISM}</label>
           </div>
         </section>
-        {this.state.shapeIsLoaded ? <Map maxZoom={14} center={[36.79, 10.18]} zoom={12} minZoom={10} style={{ height: "90vh", width: "81vw", position: "relative", zIndex: 100, backgroundColor: "white" }}>
+        {this.state.shapeIsLoaded ? <Map maxZoom={14} center={[36.79, 10.18]} zoom={12} minZoom={10} style={{ height: "90vh", width: "81vw", position: "relative", zIndex: this.props.mapZIndex, backgroundColor: "white" }}>
           <TileLayer
             url='https://api.mapbox.com/styles/v1/hunter-x/cixhpey8700q12pnwg584603g/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaHVudGVyLXgiLCJhIjoiY2l2OXhqMHJrMDAxcDJ1cGd5YzM2bHlydSJ9.jJxP2PKCIUrgdIXjf-RzlA'
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> '
