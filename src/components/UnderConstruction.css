@@ -1,8 +1,8 @@
 
 
       .svgUnderConstruction {
-        height: 200px;
-        width: 200px;
+        height: 100%;
+        width: 100%;
         margin-top: 25vh;
       }
 
@@ -43,3 +43,8 @@
         margin: auto;
         text-align: center;
       }
+      .centerUnderCons {
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+    }

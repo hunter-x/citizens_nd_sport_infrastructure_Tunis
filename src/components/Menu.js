@@ -37,7 +37,7 @@ class Menu extends Component {
                     <span className="menu-icon__line menu-icon__line-right"></span>
                 </div>
 
-                <div className="nav">
+                <div className="nav" style={{zIndex:110}}>
                     <div className="nav__content">
                         <ul className="nav__list">
                             <li className="nav__list-item"><Link className={this.props.activeViz} to="/" >{VIZ}</Link></li>

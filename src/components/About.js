@@ -20,9 +20,12 @@ export default class About extends Component {
           activeContact=''
           openMenu={this.openMenu.bind(this)}
         />
-        <UnderConstruction/>
-        <h4 className='col-md-offset-5 '>Under Construction</h4><br/>
-
+        <div className='container' >
+        <div className='col-sm-offset-4 col-sm-4 '> 
+        <UnderConstruction />
+        <h4 style={{textAlign:'center'}}>Under Construction</h4><br/>
+        </div>
+        </div>
       </section>
     );
   }

@@ -15,7 +15,7 @@ export default class MapTunisArrond extends Component {
     this.state = {
       shapeIsLoaded: false, shape: config.initShape, key: 1,
       filter: 'citizen', checked: [true, false, false, false, false],
-      grades: [30000, 40000, 50000], keyTitle: 'Number of citizens',
+      grades: [0,30000, 45000], keyTitle: 'Number of citizens',
       nom:'',population_number:'',field:'',salle:'',atheletic:'',complex:''
     }
   }

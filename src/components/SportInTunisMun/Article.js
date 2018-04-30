@@ -16,12 +16,13 @@ export default class Article extends Component {
 
     return (
       <div className='container row'>
-      <div className='col-md-offset-2'>
-        <h4>{DESCRIPTION} <a href='http://news.barralaman.tn/tunmun-sport/' target="_blank">{LINK}</a></h4>
-
-        <a href="http://news.barralaman.tn/tunmun-sport/">
-          <img src="https://i2.wp.com/news.barralaman.tn/wp-content/uploads/2018/04/tunmun_inf.jpg?resize=930%2C450 " alt="Article barlamen" style={{marginTop:'20px'}} />
-        </a>
+        <div className='col-md-offset-2'>
+          <h4>{DESCRIPTION} <a href='http://news.barralaman.tn/tunmun-sport/' target="_blank">{LINK}</a></h4>
+          <div className='col-md-12'>
+            <a href="http://news.barralaman.tn/tunmun-sport/">
+              <img src="https://i2.wp.com/news.barralaman.tn/wp-content/uploads/2018/04/tunmun_inf.jpg?resize=930%2C450 " alt="Article barlamen" style={{ marginTop: '20px',width:'100%' }} />
+            </a>
+          </div>
         </div>
       </div>
     );

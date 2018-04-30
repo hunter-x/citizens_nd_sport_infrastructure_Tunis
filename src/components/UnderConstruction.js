@@ -3,7 +3,7 @@ import'./UnderConstruction.css'
 class UnderConstruction extends Component {
   render() {
     return (
-      <svg className='col-md-offset-5 svgUnderConstruction ' id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox=" 0 0 191 191">
+      <svg className='svgUnderConstruction ' id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox=" 0 0 191 191">
 
           <polygon className="star" points="95.5 50.73 111.05 7.32 110.81 53.43 140.27 17.95 124.28 61.2 164.09 37.94 134.27 73.11 179.64 64.87 139.59 87.72 185.04 95.5 139.59 103.28 179.64 126.13 134.27 117.89 164.09 153.06 124.28 129.8 140.27 173.05 110.81 137.57 111.05 183.68 95.5 140.27 79.95 183.68 80.19 137.57 50.73 173.05 66.72 129.8 26.91 153.06 56.73 117.89 11.36 126.13 51.41 103.28 5.96 95.5 51.41 87.72 11.36 64.87 56.73 73.11 26.91 37.94 66.72 61.2 50.73 17.95 80.19 53.43 79.95 7.32 95.5 50.73">
 
