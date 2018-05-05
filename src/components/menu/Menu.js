@@ -13,7 +13,7 @@ class Menu extends Component {
     }
     componentWillMount() {
         //counterpart.getLocale();
-        //counterpart.setLocale('ar');
+        counterpart.setLocale('ar');
     }
     handleChangeDropdown(eventkey, event) {
         console.log(eventkey, event.target.innerText)
