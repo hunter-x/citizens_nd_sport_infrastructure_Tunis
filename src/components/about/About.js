@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Menu from './Menu';
-import UnderConstruction from './UnderConstruction' ;
+import Menu from '../menu/Menu';
+import UnderConstruction from '../UnderConstruction' ;
 export default class About extends Component {
   constructor(props) {
     super(props);

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Translate from 'react-translate-component';
-import Menu from './Menu';
-import ShuffleBoxes from './SportInTunisMun/ShuffleBoxes' ;
-import MapTunisArrond from './SportInTunisMun/MapTunisArrond' ;
-import Article from './SportInTunisMun/Article' ;
-import ZigzagMenu from './ZigzagMenu' ;
-export default class Home extends Component {
+import Menu from '../menu/Menu';
+import ShuffleBoxes from './ShuffleBoxes' ;
+import MapTunisArrond from './MapTunisArrond' ;
+import Article from './Article' ;
+import ZigzagMenu from '../menu/ZigzagMenu' ;
+export default class RootHome extends Component {
   constructor(props) {
     super(props);
     this.state = { menuStyle: true,chosenViz:'boxes',mapZIndex:150 }

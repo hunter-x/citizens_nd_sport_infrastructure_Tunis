@@ -41,7 +41,16 @@ module.exports = {
         hover:'Hover Over the map for more info',
         loading:'Loading Map',
         
+    },
+    home:{
+        title:'Municipal election data',
+        readmore:'Read More',
+    },
+    card1:{
+        title:'Distribution of citizens & Sport infrastructure',
+        description:'Tunis Municipality'
     }
+
 
 
   
