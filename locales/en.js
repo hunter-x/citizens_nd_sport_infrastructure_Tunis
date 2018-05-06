@@ -50,13 +50,18 @@ module.exports = {
         title1: 'Distribution of citizens & Sport infrastructure',
         description1: 'Tunis Municipality',
         title2: 'Voting center location',
-        description2: 'Precise locations- missing 310 out of 4553'
+        description2: 'Precise locations- missing 310 out of 4553',
+        title3: 'Election turnout level',
+        description3: 'Governorate level turnout'
 
     },
     votingCenterViz:{
         title : 'All voting centers ',
         titleSelectBox: 'Choose a municipality from the list',
         titleSelectVC: 'Select voting center',
+    },
+    crowdSource:{
+        title1:'please choose Municipality and username'
     }
 
 

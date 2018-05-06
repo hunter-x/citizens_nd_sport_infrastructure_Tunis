@@ -50,7 +50,9 @@ module.exports = {
         title1: 'توزيع السكان والمنشاءات الرياضية',
         description1: 'حسب الدوائر - بلدية تونس',
         title2: 'مراكز الاقتراع        ',
-        description2: 'المواقع الدقيقة - ينقص 310 من 4553'
+        description2: 'المواقع الدقيقة - ينقص 310 من 4553',
+        title3: 'Election turnout level',
+        description3: 'Governorate level turnout'
 
     },
     votingCenterViz:{
@@ -58,6 +60,25 @@ module.exports = {
         titleSelectBox: 'إختر ولاية من القائمة',
         titleSelectVC: 'إختر مركز إقتراع',
 
+    },
+    turnout:{
+        title:'Turnout level per gov'
+    },
+    crowdSource:{
+        title1:'please choose Municipality and username',
+        title2:'please fill the form Bellow',
+        title_username:'Please enter a username',
+        selectMun:'Please select a municipality',
+        submit:'Submit',
+        numberPaper:'Please enter number of paper',
+        blank:'Please enter number of blank',
+        total:'Please enter number of total ballots',
+        spoiled:'Please enter number of spoiled',
+        canceled:'Please enter number of cnceled',
+        thanks:'Thanks for Submitting',
+        another:'Submit Another'
+
+        
     }
 
 

@@ -9,7 +9,7 @@ import MenuItem from 'react-bootstrap/lib/MenuItem';
 class Menu extends Component {
     constructor(props) {
         super(props);
-        this.state = { dropdown: 'Language' }
+        this.state = { dropdown: 'Language'}
     }
     componentWillMount() {
         //counterpart.getLocale();
@@ -37,7 +37,7 @@ class Menu extends Component {
                     <span className="menu-icon__line menu-icon__line-right"></span>
                 </div>
 
-                <div className="nav" style={{zIndex:130}}>
+                <div className="nav" style={{zIndex:130,visibility:this.props.visibility}}>
                     <div className="nav__content">
                         <ul className="nav__list">
                             <li className="nav__list-item"><Link className={this.props.activeViz} to="/" >{VIZ}</Link></li>

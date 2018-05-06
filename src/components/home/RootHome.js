@@ -29,6 +29,10 @@ export default class RootHome extends Component {
     console.log(counterpart.translate('card.title2'));
     const TITLECARD2 = <Translate type='text' content='card.title2' />//Municipal election data
     const DESC_CARD2 = <Translate type='text' content='card.description2' />//Municipal election data
+    /* translation 2nd Card */
+    console.log(counterpart.translate('card.title2'));
+    const TITLECARD3 = <Translate type='text' content='card.title3' />//Municipal election data
+    const DESC_CARD3 = <Translate type='text' content='card.description3' />//Municipal election data
 
     return (
       <section className={menuStyle} >
@@ -45,6 +49,7 @@ export default class RootHome extends Component {
           <div className='row col-md-12' style={{zIndex:this.state.mapZIndex}} >
             <Card img="card1.jpg" redirectLink="/sport-infra-tunis" title={TITLECARD} description={DESC_CARD} />
             <Card img="card2.jpg" redirectLink="/voting-center" title={TITLECARD2} description={DESC_CARD2} />
+            <Card img="card2.jpg" redirectLink="/participation-gov-level" title={TITLECARD3} description={DESC_CARD3} />
 
           </div>
 
